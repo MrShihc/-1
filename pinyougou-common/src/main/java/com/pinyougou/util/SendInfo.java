@@ -12,7 +12,6 @@ import com.aliyuncs.profile.DefaultProfile;
 
 /**
  * 创作时间：2019/10/22 16:30
- * 作者：李增强
  */
 public class SendInfo {
 
