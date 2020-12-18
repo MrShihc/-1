@@ -31,7 +31,7 @@ public class SendInfo {
     */
     public static String test01(String tel,String code) {
         DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "" +
-                "", "FJwwcOrkXhZM3kEL8f4DhV72fXe3jY");
+                "", "");
         IAcsClient client = new DefaultAcsClient(profile);
 
         CommonRequest request = new CommonRequest();

@@ -20,8 +20,8 @@ public class SendSms {
     static final String domain = "dysmsapi.aliyuncs.com";
 
     // TODO 此处需要替换成开发者自己的AK(在阿里云访问控制台寻找)
-    static final String accessKeyId = "LTAI4G8EAswWP79XTNtHPG6o";  // TODO 修改成自己的
-    static final String accessKeySecret = "83YK6bfb1AbEtuRn2kxubqjaeFpRQd";   // TODO 修改成自己的
+    static final String accessKeyId = "";  // TODO 修改成自己的
+    static final String accessKeySecret = "";   // TODO 修改成自己的
 
     public static SendSmsResponse sendSms(String telephone, String code) throws ClientException {
 
@@ -53,7 +53,7 @@ public class SendSms {
 
         //必填:短信模板-可在短信控制台中找到
 
-        request.setTemplateCode("SMS_205821039");    // TODO 修改成自己的
+        request.setTemplateCode("");    // TODO 修改成自己的
 
         //可选:模板中的变量替换JSON串,如模板内容为"亲爱的${name},您的验证码为${code}"时,此处的值为
 
@@ -96,7 +96,7 @@ public class SendSms {
         String code = Integer.toString(getNewcode());
         System.out.println("发送的验证码为："+code);
         //发短信
-        SendSmsResponse response =sendSms("15932040663",code); // TODO 填写你需要测试的手机号码
+        SendSmsResponse response =sendSms("",code); // TODO 填写你需要测试的手机号码
         System.out.println("短信接口返回的数据----------------");
         System.out.println("Code=" + response.getCode());
         System.out.println("Message=" + response.getMessage());
