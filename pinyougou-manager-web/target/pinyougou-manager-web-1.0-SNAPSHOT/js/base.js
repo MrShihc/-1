@@ -1,2 +1,0 @@
-/* 创建模块 */
-var app = angular.module('pinyougou', []);	//定义品优购模块,不包含插件
